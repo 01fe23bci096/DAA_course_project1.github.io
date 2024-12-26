@@ -1,79 +1,110 @@
-/* General Styles */
-body {
-    font-family: 'Poppins', sans-serif;
+/* Reset default margin and padding */
+* {
     margin: 0;
     padding: 0;
-    background-color: #f0f8ff;
-    color: #333;
-    line-height: 1.6;
+    box-sizing: border-box;
 }
 
-header {
-    background-color: #0066cc;
-    color: white;
-    text-align: center;
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f8ff; /* Light blue background */
+    margin: 0;
     padding: 20px;
-    border-radius: 8px;
-    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
 }
 
-header .name {
-    font-weight: 600;
-}
-
-.content {
-    padding: 20px;
+/* Main Container */
+section {
+    background-color: white;
+    padding: 2rem;
+    width: 90%;
     max-width: 800px;
-    margin: 0 auto;
-}
-
-.section {
-    background-color: #e6f3ff;
-    padding: 15px;
-    margin: 15px 0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 30px;
 }
 
-.section-title {
-    color: #004c99;
-    margin-bottom: 10px;
+/* Header */
+header {
+    background-color: #007acc; /* Primary blue */
+    color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
 }
 
+header h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+header p {
+    margin: 1rem 0 0;
+}
+
+/* Section Titles */
+h2 {
+    color: #005b99; /* Darker blue */
+    margin-bottom: 1rem;
+}
+
+/* List Items */
 ul {
     list-style: none;
     padding: 0;
 }
 
 ul li {
-    margin: 5px 0;
+    background-color: #dbefff; /* Light blue shade for items */
+    margin-bottom: 0.5rem;
+    padding: 0.75rem;
+    border-radius: 5px;
 }
 
+/* Links */
 a {
-    color: #0066cc;
+    color: #007acc; /* Primary blue for links */
     text-decoration: none;
+    font-weight: bold;
 }
 
 a:hover {
     text-decoration: underline;
 }
 
-dl {
-    margin: 0;
-}
-
-dt {
+/* Definition List */
+dl dt {
     font-weight: bold;
-    color: #004c99;
+    color: #333;
+    margin-top: 1rem;
 }
 
-dd {
-    margin: 0 0 10px 20px;
+dl dd {
+    margin-left: 1.5rem;
+    color: #666;
 }
 
-blockquote.quote {
-    text-align: center;
+/* Blockquote */
+blockquote {
     font-style: italic;
-    margin: 20px;
-    color: #0066cc;
+    color: #555;
+    border-left: 4px solid #007acc; /* Blue border for blockquote */
+    padding-left: 1rem;
+    margin-top: 2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    section {
+        padding: 1.5rem;
+    }
+
+    header {
+        padding: 1.5rem;
+    }
 }
