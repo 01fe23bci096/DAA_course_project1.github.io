@@ -3,161 +3,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reflections</title>
+    <title>DAA Lab Reflections</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background: #f4f4f9;
+            margin: 20px;
+        }
+        h1, h2 {
             color: #333;
         }
-        header {
-            background: #d5dde6;
-            color: #fff;
-            padding: 10px 20px;
-            text-align: center;
-        }
-        .container {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background: #fff;
-            border-radius: 10px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-        h1, h2, h3 {
-            color: #3a6ea5;
-        }
-        h1 {
-            font-size: 2em;
-            margin-bottom: 10px;
-        }
-        h2 {
-            margin-top: 20px;
-            border-bottom: 2px solid #3a6ea5;
-            padding-bottom: 5px;
-        }
         ul {
-            margin: 10px 0;
-            padding-left: 20px;
+            margin: 10px 0 20px 20px;
         }
         li {
-            margin-bottom: 5px;
-        }
-        .code {
-            background: #eef;
-            padding: 5px 10px;
-            border-radius: 5px;
-            font-family: monospace;
+            margin-bottom: 10px;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Reflections</h1>
-    </header>
-    <div class="container">
-        <h2>Question 1: Challenges in Learning/Understanding These Concepts</h2>
-        <h3>Time Complexity Analysis</h3>
-        <ul>
-            <li>Abstract mathematical concepts like Big O, Omega, and Theta can be hard to grasp.</li>
-            <li>Applying these concepts to nested loops or recursion is tricky.</li>
-            <li>Ignoring constant factors and lower-order terms feels counterintuitive initially.</li>
-        </ul>
+    <h1>DAA Lab Reflections</h1>
 
-        <h3>Binary Search Trees (BST)</h3>
-        <ul>
-            <li>Operations often rely on recursion, which can be confusing.</li>
-            <li>Deletion is especially challenging, particularly when a node has two children.</li>
-            <li>Balanced BSTs require mastering complex rebalancing techniques like rotations.</li>
-        </ul>
+    <h2>1. What are the challenges in learning/understanding the above concepts?</h2>
+    <ul>
+        <li><strong>Time Complexity Analysis:</strong>
+            <ul>
+                <li>Understanding asymptotic notations like Big-O, Omega, and Theta can be abstract and difficult to visualize.</li>
+                <li>Comparing the efficiency of different algorithms analytically requires a strong mathematical foundation.</li>
+            </ul>
+        </li>
+        <li><strong>Binary Search Tree (BST):</strong>
+            <ul>
+                <li>Grasping the recursive nature of operations like insertion, deletion, and traversal.</li>
+                <li>Visualizing the tree structure and identifying cases where the BST becomes unbalanced.</li>
+            </ul>
+        </li>
+        <li><strong>DFS and BFS:</strong>
+            <ul>
+                <li>Managing large graphs and understanding traversal order, especially in edge cases like cyclic or disconnected graphs.</li>
+                <li>Debugging stack/queue-based implementations can be tricky.</li>
+            </ul>
+        </li>
+        <li><strong>Heap:</strong>
+            <ul>
+                <li>Understanding how heap properties are maintained during operations like insertion and heapify.</li>
+                <li>Differentiating between min-heaps and max-heaps and their applications.</li>
+            </ul>
+        </li>
+        <li><strong>Sorting:</strong>
+            <ul>
+                <li>Identifying which sorting algorithm is most efficient for a given dataset or problem.</li>
+                <li>Understanding advanced sorting techniques like quicksort and mergesort in terms of their recursion and partitioning.</li>
+            </ul>
+        </li>
+        <li><strong>Pattern Searching:</strong>
+            <ul>
+                <li>Implementing algorithms like KMP or Rabin-Karp correctly and understanding their preprocessing steps.</li>
+                <li>Handling overlapping patterns in strings or large datasets efficiently.</li>
+            </ul>
+        </li>
+        <li><strong>Graph Algorithms:</strong>
+            <ul>
+                <li>Visualizing and solving problems involving weighted, directed, or cyclic graphs.</li>
+                <li>Understanding advanced algorithms like Dijkstra’s, Bellman-Ford, or Floyd-Warshall.</li>
+            </ul>
+        </li>
+    </ul>
 
-        <h3>DFS and BFS</h3>
-        <ul>
-            <li>Recursive implementation of DFS and queue-based BFS can be error-prone.</li>
-            <li>Switching between adjacency lists and matrices adds complexity.</li>
-        </ul>
+    <h2>2. What are the challenges in correlating with real-world applications?</h2>
+    <ul>
+        <li><strong>Time Complexity Analysis:</strong> Balancing theoretical complexity with real-world performance bottlenecks caused by hardware or constraints.</li>
+        <li><strong>Binary Search Tree (BST):</strong>
+            <ul>
+                <li>Understanding how BSTs are used in database indexing or file systems.</li>
+                <li>Correlating unbalanced trees with degraded performance in real-world scenarios.</li>
+            </ul>
+        </li>
+        <li><strong>DFS and BFS:</strong>
+            <ul>
+                <li>Applying DFS to backtracking problems like solving mazes or puzzles.</li>
+                <li>Using BFS in applications like shortest path routing or social network analysis.</li>
+            </ul>
+        </li>
+        <li><strong>Heap:</strong>
+            <ul>
+                <li>Mapping heap usage to scenarios like task scheduling or implementing priority queues.</li>
+                <li>Understanding real-world applications in memory management or dynamic median finding.</li>
+            </ul>
+        </li>
+        <li><strong>Sorting:</strong> Identifying sorting needs in data processing, e.g., ranking, arranging, or data visualization.</li>
+        <li><strong>Pattern Searching:</strong> Relating pattern searching to text analysis, log filtering, or genome sequencing.</li>
+        <li><strong>Graph Algorithms:</strong>
+            <ul>
+                <li>Recognizing use cases in transport systems, like Dijkstra’s algorithm for shortest path computation.</li>
+                <li>Applying graph coloring or flow algorithms to practical problems like resource allocation or network optimization.</li>
+            </ul>
+        </li>
+    </ul>
 
-        <h3>Heap</h3>
-        <ul>
-            <li>Understanding the dual representation of heaps (binary tree and array) is challenging.</li>
-            <li>Heapify, insertion, and deletion operations require careful study.</li>
-        </ul>
-
-        <h3>Sorting</h3>
-        <ul>
-            <li>Numerous algorithms with varying complexities can be overwhelming.</li>
-            <li>Implementing advanced algorithms like merge sort and quicksort demands attention to detail.</li>
-            <li>Choosing the best algorithm for a specific scenario isn’t always obvious.</li>
-        </ul>
-
-        <h3>Pattern Searching</h3>
-        <ul>
-            <li>Optimized algorithms like KMP and Boyer-Moore are complex to master.</li>
-            <li>Pre-processing steps, such as building partial match tables, can be confusing.</li>
-        </ul>
-
-        <h3>Graph Algorithms</h3>
-        <ul>
-            <li>Numerous variations make it difficult to choose the right one.</li>
-            <li>Understanding algorithm proofs and how graph representations affect performance is challenging.</li>
-        </ul>
-
-        <h2>Question 2: Challenges in Correlating Concepts with Real-World Applications</h2>
-        <h3>Time Complexity Analysis</h3>
-        <ul>
-            <li>Bridging theoretical time complexity with real-world performance can be tricky.</li>
-        </ul>
-
-        <h3>Binary Search Trees (BST)</h3>
-        <ul>
-            <li>Understanding their use in systems like databases requires in-depth knowledge.</li>
-        </ul>
-
-        <h3>DFS and BFS</h3>
-        <ul>
-            <li>Applications in network routing, web crawling, and puzzle-solving are not always intuitive.</li>
-        </ul>
-
-        <h3>Heap</h3>
-        <ul>
-            <li>Grasping how heaps work in systems like task schedulers requires familiarity with implementations.</li>
-        </ul>
-
-        <h3>Sorting</h3>
-        <ul>
-            <li>Understanding algorithm optimization in large-scale data processing can be difficult.</li>
-        </ul>
-
-        <h3>Pattern Searching</h3>
-        <ul>
-            <li>Tailoring and optimizing pattern searching for tools like search engines is challenging.</li>
-        </ul>
-
-        <h3>Graph Algorithms</h3>
-        <ul>
-            <li>Connecting algorithms to real-world systems like GPS navigation requires deep understanding.</li>
-        </ul>
-
-        <h2>Question 3: Determining the Most Efficient Approach/Design Techniques for Complex Problems</h2>
-        <h3>General Principles</h3>
-        <ul>
-            <li><strong>Understand the Problem:</strong> Fully grasp constraints and requirements.</li>
-            <li><strong>Analyze Algorithms:</strong> Compare time and space complexities.</li>
-            <li><strong>Pick the Right Data Structures:</strong> The right choice can simplify implementation.</li>
-            <li><strong>Weigh Trade-offs:</strong> Balance speed, memory, and simplicity.</li>
-            <li><strong>Optimize:</strong> Use techniques like caching or memoization where applicable.</li>
-        </ul>
-
-        <h3>Specific Considerations</h3>
-        <ul>
-            <li>Focus on solutions with lower time complexity for large datasets.</li>
-            <li>Choose algorithms with minimal space requirements if memory is limited.</li>
-            <li>Tailor approaches to exploit problem-specific characteristics.</li>
-            <li>Prioritize simplicity and maintainability alongside efficiency.</li>
-        </ul>
-    </div>
+    <h2>3. How do you determine the most efficient approach/design techniques when solving a complex problem?</h2>
+    <ul>
+        <li><strong>Time Complexity Analysis:</strong> Analyze the size of the input and evaluate which algorithm can handle the worst-case scenario within acceptable time.</li>
+        <li><strong>Binary Search Tree (BST):</strong> Use BSTs only when dynamic insertion, deletion, and search are required, ensuring balance for efficiency.</li>
+        <li><strong>DFS and BFS:</strong> Use BFS for shortest path problems in unweighted graphs and DFS for connectivity or cycle detection.</li>
+        <li><strong>Heap:</strong> Apply heaps when prioritization is required, e.g., finding the k largest or smallest elements.</li>
+        <li><strong>Sorting:</strong> For nearly sorted data, use insertion sort; for large datasets, prefer quicksort or mergesort for efficiency.</li>
+        <li><strong>Pattern Searching:</strong> Choose algorithms like KMP or Rabin-Karp when searching multiple patterns or when preprocessing is needed.</li>
+        <li><strong>Graph Algorithms:</strong> Opt for Dijkstra’s algorithm for shortest paths in weighted graphs with non-negative edges and Bellman-Ford for graphs with negative weights.</li>
+    </ul>
 </body>
 </html>
