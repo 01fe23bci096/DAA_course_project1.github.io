@@ -90,7 +90,46 @@
             font-weight: bold;
             color: #0074cc;
         }
-        
+
+        /* Centered content styles */
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .intro-container {
+            max-width: 900px;
+            text-align: center;
+            padding: 20px;
+            margin: 0 auto;
+        }
+
+        .intro-container h1 {
+            font-size: 2.8em;
+        }
+
+        .intro-container p {
+            font-size: 1.4em;
+        }
+
+        .buttons-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 30px;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .content {
+            text-align: left;
+            margin-top: 20px;
+        }
+
     </style>
 </head>
 <body>
@@ -119,54 +158,118 @@
         <li><a href="https://linkedin.com/in/www.linkedin.com/in/riya-magadum-762486343" target="_blank">LinkedIn</a></li>
     </ul>
 
-    <h2>Portfolio Topic</h2>
-    <dl>
-        <dt>Course Name</dt>
-        <dd>Algorithmic Problem Solving</dd>
+    <h2 style="text-align: center; color: #0056b3;">Portfolio Topic</h2>
+<dl style="max-width: 800px; margin: 0 auto; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6;">
+    <dt style="font-weight: 600; color: #0074cc;">Course Name</dt>
+    <dd style="font-weight: 400; color: #4b4b4b;">Algorithmic Problem Solving</dd>
 
-        <dt>Course Code</dt>
-        <dd>15ECSP204</dd>
+    <dt style="font-weight: 600; color: #0074cc;">Course Code</dt>
+    <dd style="font-weight: 400; color: #4b4b4b;">15ECSP204</dd>
 
-        <dt>Name</dt>
-        <dd>Riya Magadum</dd>
+    <dt style="font-weight: 600; color: #0074cc;">Name</dt>
+    <dd style="font-weight: 400; color: #4b4b4b;">Riya Magadum</dd>
 
-        <dt>SRN</dt>
-        <dd>01FE23BCI096</dd>
+    <dt style="font-weight: 600; color: #0074cc;">SRN</dt>
+    <dd style="font-weight: 400; color: #4b4b4b;">01FE23BCI096</dd>
 
-        <dt>Course Instructor</dt>
-        <dd>Prof. K M M Rajashekharaiah</dd>
+    <dt style="font-weight: 600; color: #0074cc;">Course Instructor</dt>
+    <dd style="font-weight: 400; color: #4b4b4b;">Prof. K M M Rajashekharaiah</dd>
 
-        <dt>University</dt>
-        <dd>KLE Technological University</dd>
+    <dt style="font-weight: 600; color: #0074cc;">University</dt>
+    <dd style="font-weight: 400; color: #4b4b4b;">KLE Technological University</dd>
 
-        <dt>Portfolio Topic/Domain</dt>
-        <dd>DAA course project</dd>
-    </dl>
+    <dt style="font-weight: 600; color: #0074cc;">Portfolio Topic/Domain</dt>
+    <dd style="font-weight: 400; color: #4b4b4b;">DAA course project</dd>
+</dl>
+<section>
+    <div class="container">
+        <div class="intro-container">
+            <h1>Introduction to the Data Structures and Algorithms Course</h1>
+            <p>This course provides a comprehensive understanding of data structures and algorithms, emphasizing their design, analysis, and real-world applications.</p>
+        </div>
 
-    <h2>Course Overview</h2>
-    <p>This course provides a comprehensive understanding of data structures and algorithms, emphasizing their design, analysis, and real-world applications.</p>
+        <div class="buttons-container">
+            <button class="button" onclick="toggleContent()">Theory</button>
+            <button class="button" onclick="window.open('https://drive.google.com/file/d/1a2b3c4d5e6f7g8h9/view?usp=sharing', '_blank')">Lab</button>
+        </div>
 
-    <button class="button" onclick="toggleContent()">Theory</button>
-    <div id="course-content" class="course-content">
-        <h3>Course Highlights</h3>
-        <ul>
-            <li><span class="highlight">Algorithm Design:</span> Focus on key paradigms like divide-and-conquer, dynamic programming, greedy algorithms, and backtracking.</li>
-            <li><span class="highlight">Efficiency Analysis:</span> Understanding time and space complexities (e.g., O(1), O(n log n), O(2^n)) to assess performance.</li>
-            <li><span class="highlight">Computational Techniques:</span> Recursive solutions for problems like Fibonacci series, iterative methods for looping tasks, and backtracking for exhaustive search (e.g., solving mazes).</li>
-        </ul>
+        <div id="course-content" class="hidden">
+            <hr>
+            <div class="section">
+                <h2>Course Highlights</h2>
 
-        <h3>Data Structures</h3>
-        <ul>
-            <li><span class="highlight">Linear Structures:</span> Arrays, linked lists, stacks, and queues for basic storage and sequential operations.</li>
-            <li><span class="highlight">Hierarchical Structures:</span> AVL trees, red-black trees, and heaps for balanced and efficient data handling.</li>
-            <li><span class="highlight">Graph Structures:</span> Representations (adjacency lists/matrices), traversal methods (DFS, BFS), and spanning trees for network modeling.</li>
-        </ul>
-    </div>
+                <div class="core-concepts">
+                    <h3>Core Concepts</h3>
+                    <ul>
+                        <li><span class="highlight">Algorithm Design:</span> Focus on key paradigms like divide-and-conquer, dynamic programming, greedy algorithms, and backtracking.</li>
+                        <li><span class="highlight">Efficiency Analysis:</span> Understanding time and space complexities (e.g., O(1), O(n log n), O(2^n)) to assess performance.</li>
+                        <li><span class="highlight">Computational Techniques:</span> Recursive solutions for problems like Fibonacci series, iterative methods for looping tasks, and backtracking for exhaustive search (e.g., solving mazes).</li>
+                    </ul>
+                </div>
 
-    <button class="button" onclick="window.open('https://drive.google.com/file/d/1a2b3c4d5e6f7g8h9/view?usp=sharing', '_blank')">Lab</button>
+                <div class="data-structures">
+                    <h3>Data Structures</h3>
+                    <ul>
+                        <li><span class="highlight">Linear Structures:</span> Arrays, linked lists, stacks, and queues for basic storage and sequential operations.</li>
+                        <li><span class="highlight">Hierarchical Structures:</span> AVL trees, red-black trees, and heaps for balanced and efficient data handling.</li>
+                        <li><span class="highlight">Graph Structures:</span> Representations (adjacency lists/matrices), traversal methods (DFS, BFS), and spanning trees for network modeling.</li>
+                        <li><span class="highlight">Specialized Structures:</span> Fenwick trees, segment trees, and tries for fast data queries and prefix searches.</li>
+                    </ul>
+                </div>
 
-    <div class="quote">
-        <blockquote>“The only way to do great work is to love what you do.” – Steve Jobs</blockquote>
+                <div class="algorithms">
+                    <h3>Algorithms</h3>
+                    <ul>
+                        <li><span class="highlight">Sorting:</span> Efficient algorithms like merge sort and quicksort to organize data.</li>
+                        <li><span class="highlight">String Search:</span> Pattern-matching techniques like KMP and Rabin-Karp for applications in text analysis and cybersecurity.</li>
+                        <li><span class="highlight">Graph Algorithms:</span> Dijkstra's and Kruskal's algorithms for finding shortest paths and building efficient networks.</li>
+                    </ul>
+                </div>
+
+                <div class="applications">
+                    <h3>Applications</h3>
+                    <ul>
+                        <li><span class="highlight">Web Development:</span> Database indexing and query optimization using sorting and searching algorithms.</li>
+                        <li><span class="highlight">Networking:</span> Graph algorithms for optimal routing paths in communication networks.</li>
+                        <li><span class="highlight">Game Development:</span> Tree-based structures for managing game states or events dynamically.</li>
+                        <li><span class="highlight">Cybersecurity:</span> Intrusion detection systems leveraging string-matching algorithms.</li>
+                        <li><span class="highlight">Data Analytics:</span> Efficient data aggregation using Fenwick trees or sparse tables.</li>
+                        <li><span class="highlight">Machine Learning:</span> Priority-based operations like decision tree construction using heaps.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="reflection">
+                <h2>Key Learning Reflections</h2>
+                <ul>
+                    <li><span class="highlight">Problem-Solving Techniques:</span> Recursion, iteration, and backtracking mimic real-world processes. For example, recursion models repetitive tasks like Fibonacci computation, while backtracking explores all possible solutions, such as solving Sudoku.</li>
+                    <li><span class="highlight">Efficiency and Growth Classes:</span> Algorithms are evaluated by their resource usage. A linear algorithm (O(n)) scales better than a quadratic one (O(n²)) for large datasets. Space-efficient algorithms reduce memory requirements, balancing performance.</li>
+                    <li><span class="highlight">Design Principles:</span>
+                        <ul>
+                            <li><span class="highlight">Modularity:</span> Breaking problems into independent parts for easier debugging and scaling.</li>
+                            <li><span class="highlight">Abstraction:</span> Focusing on high-level design to simplify complexity.</li>
+                            <li><span class="highlight">Optimization:</span> Striking a balance between performance and simplicity.</li>
+                        </ul>
+                    </li>
+                    <li><span class="highlight">Hierarchical Data Structures:</span>
+                        <ul>
+                            <li><span class="highlight">Binary Trees:</span> Efficient for searching and data management.</li>
+                            <li><span class="highlight">AVL/Red-Black Trees:</span> Self-balancing for consistent performance.</li>
+                            <li><span class="highlight">Tries:</span> Effective for prefix-based tasks like autocomplete.</li>
+                        </ul>
+                    </li>
+                    <li><span class="highlight">Array Query Algorithms:</span> Segment trees and Fenwick trees enable fast query operations, vital for applications like stock analysis or real-time data updates.</li>
+                    <li><span class="highlight">Trees vs. Graphs:</span>
+                        <ul>
+                            <li><span class="highlight">Trees:</span> Simplified hierarchical relationships, e.g., file systems.</li>
+                            <li><span class="highlight">Graphs:</span> Versatile and used for modeling networks, social connections, or transportation systems.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
 </section>
 
