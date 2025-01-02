@@ -145,59 +145,27 @@
             margin-top: 20px;
         }
     </style>
+    <script>
+        function toggleContent() {
+            var content = document.getElementById("course-content");
+            if (content.classList.contains("hidden")) {
+                content.classList.remove("hidden");
+            } else {
+                content.classList.add("hidden");
+            }
+        }
+    </script>
 </head>
 <body>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Data Structures and Algorithms Course</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        .container {
-            width: 80%;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #fff;
-        }
-        h1, h2, h3 {
-            color: #333;
-        }
-        .section {
-            margin-bottom: 40px;
-        }
-        .section ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        .section li {
-            margin: 10px 0;
-        }
-        .highlight {
-            font-weight: bold;
-        }
-        .reflection-questions {
-            margin-top: 20px;
-        }
-        .reflection-questions ol {
-            margin-top: 10px;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h1>Introduction to the Data Structures and Algorithms Course</h1>
-        <p>This course provides a comprehensive understanding of data structures and algorithms, emphasizing their design, analysis, and real-world applications. It covers foundational principles in mathematics, computer science, and engineering to equip students with the skills to tackle computational problems effectively.</p>
+<div class="container">
+    <h1>Introduction to the Data Structures and Algorithms Course</h1>
+    <p>This course provides a comprehensive understanding of data structures and algorithms, emphasizing their design, analysis, and real-world applications.</p>
+    
+    <button class="button" onclick="toggleContent()">Theory</button>
+    
+    <div id="course-content" class="hidden">
         <hr>
-
         <div class="section">
             <h2>Course Highlights</h2>
 
@@ -306,8 +274,11 @@
             </ol>
         </div>
     </div>
+</div>
+
 </body>
 </html>
+
 
 
 
